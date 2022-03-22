@@ -17,16 +17,39 @@ class ItemPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-            'My List: ' + itemArgs.name + ' Moh. Iqbal Waldan (2031710139)'),
+            'My Film ' + itemArgs.name + ' Moh. Iqbal Waldan (2031710139)'),
         backgroundColor: Colors.pink,
       ),
-      body: Center(
-        child: Text("Item Nama: " +
-            itemArgs.name +
-            "\nItem Price: Rp. " +
-            itemArgs.price.toString() +
-            "\nItem Weight: " +
-            itemArgs.weight.toString()),
+      body: Column(
+        children: [
+          Expanded(
+            child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.pink,
+                  image: DecorationImage(image: AssetImage(itemArgs.image)),
+                )),
+          ),
+          Expanded(
+            child: Column(
+              children: [
+                Text(
+                  itemArgs.name,
+                  style: const TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+                Text(
+                  itemArgs.year.toString(),
+                  style: const TextStyle(
+                    fontSize: 15,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

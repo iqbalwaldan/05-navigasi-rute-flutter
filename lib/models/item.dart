@@ -4,8 +4,8 @@
 
 class Item {
   String name;
-  int price;
-  int weight;
+  int year;
+  String image;
 
-  Item({required this.name, required this.price, required this.weight});
+  Item({required this.image, required this.name, required this.year});
 }

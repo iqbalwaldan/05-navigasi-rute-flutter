@@ -7,14 +7,14 @@ import 'package:flutter/material.dart';
 class Mycard extends StatelessWidget {
   const Mycard({
     Key? key,
+    required this.image,
     required this.name,
-    required this.price,
-    required this.weight,
+    required this.year,
   }) : super(key: key);
 
+  final String image;
   final String name;
-  final int price;
-  final int weight;
+  final int year;
 
   @override
   Widget build(BuildContext context) {
@@ -23,17 +23,15 @@ class Mycard extends StatelessWidget {
         margin: const EdgeInsets.all(8),
         child: Row(
           children: [
-            Expanded(child: Text(name)),
+            Expanded(
+                child: Image(
+              image: AssetImage(image),
+            )),
+            Expanded(child: Text(name, textAlign: TextAlign.center)),
             Expanded(
               child: Text(
-                'Rp' + price.toString(),
+                year.toString(),
                 textAlign: TextAlign.center,
-              ),
-            ),
-            Expanded(
-              child: Text(
-                weight.toString() + ' ons',
-                textAlign: TextAlign.end,
               ),
             ),
           ],

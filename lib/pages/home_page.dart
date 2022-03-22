@@ -11,8 +11,18 @@ class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
 
   final List<Item> items = [
-    Item(name: 'Sugar', price: 5000, weight: 30),
-    Item(name: 'Salt', price: 2000, weight: 10),
+    Item(
+        image: '../asset/image/Spider-Man_Homecoming_poster.jpg',
+        name: 'Spider-Man: Homecoming',
+        year: 2017),
+    Item(
+        image: '../asset/image/Spider-Man_Far_From_Home_poster.jpg',
+        name: 'Spider-Man: Far from Home',
+        year: 2019),
+    Item(
+        image: '../asset/image/Spider-Man_No_Way_Home_poster.jpg',
+        name: 'Spider-Man: No Way Home',
+        year: 2021),
   ];
 
   static const routeName = '/';
@@ -21,7 +31,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Belanja Moh. Iqbal Waldan (2031710139)'),
+        title: const Text('My Film Moh. Iqbal Waldan (2031710139)'),
         backgroundColor: Colors.pink,
       ),
       body: Container(

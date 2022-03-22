@@ -28,9 +28,9 @@ class MylistView extends StatelessWidget {
             Navigator.pushNamed(context, page, arguments: item);
           },
           child: Mycard(
+            image: item.image,
             name: item.name,
-            price: item.price,
-            weight: item.weight,
+            year: item.year,
           ),
         );
       },

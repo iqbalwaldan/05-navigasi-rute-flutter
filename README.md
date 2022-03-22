@@ -8,8 +8,8 @@ NIM : 203171039
 
 ## Halaman Home
 
-![Home](https://user-images.githubusercontent.com/69692712/158817331-042b7206-f113-4376-a6d3-35ad66c55224.png)
+![Home](https://user-images.githubusercontent.com/69692712/159444788-c72cc9ba-2e55-4f53-88ca-7f9f5b8afce1.png)
 
 ## Halaman Item Page
 
-![Item](https://user-images.githubusercontent.com/69692712/158817341-62f0137a-75c1-4259-b9ba-79768d85b80b.png)
+![Item](https://user-images.githubusercontent.com/69692712/159444776-c00d7147-673c-4bef-b1e3-3a4754602f06.png)
